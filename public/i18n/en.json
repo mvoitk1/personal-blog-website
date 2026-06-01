@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "toggleTheme": "Toggle theme",
+    "language": "Language"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Madis Voitk",
+    "tagline": "IT Systems Development student & aspiring software engineer",
+    "intro": "Motivated second-year student at Tallinn University of Technology. I build full-stack web apps and enjoy turning real-world problems into clean, maintainable software.",
+    "ctaBlog": "Read the blog",
+    "ctaContact": "Get in touch"
+  },
+  "sections": {
+    "profile": "Profile",
+    "education": "Education",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "languages": "Languages",
+    "contact": "Contact"
+  },
+  "profile": {
+    "body": "Motivated second-year IT Systems Development student at Tallinn University of Technology (expected graduation: 2027). Strong analytical thinker with technical curiosity and a proactive approach to learning. Passionate about software development, automation, and applying technology to solve real-world problems."
+  },
+  "education": {
+    "school": "Tallinn University of Technology",
+    "program": "IT Systems Development",
+    "period": "2024 – Expected 2027",
+    "coursework": "Coursework",
+    "courseworkList": "Oracle: SQL and PL/SQL Programming Languages, JavaScript, Software Testing Fundamentals, Software Engineering, Web Applications with C#, Advanced Python, Database Systems Fundamentals, Algorithms and Data Structures, Web Technologies, Programming in C#, Microcontroller Programming with Python, Probability Theory and Mathematical Statistics, Java, Computer Networks Fundamentals, Operating Systems and Administration, Higher Mathematics, Computers."
+  },
+  "experience": {
+    "title": "Software Development Student Projects",
+    "subtitle": "Tallinn University of Technology",
+    "items": [
+      "Completed coursework and projects using C#, JS, TS, Vue, Angular, React, Java, Kotlin, PHP, Python and SQL.",
+      "Practiced version control with Git and collaborative development in team assignments.",
+      "Developed understanding of clean code principles, debugging, and object-oriented design."
+    ]
+  },
+  "skills": {
+    "languagesLabel": "Programming Languages",
+    "languagesList": "C#, JS, TS, Vue, Angular, React, Python, Java, Kotlin, PHP, SQL",
+    "toolsLabel": "Tools & Technologies",
+    "toolsList": "VS Code, IntelliJ IDEA, Docker, PyCharm, Rider, PHPStorm, Android Studio, Git, GitHub",
+    "strengthsLabel": "Core Strengths",
+    "strengthsList": "Logical thinking, teamwork, communication, adaptability"
+  },
+  "projects": {
+    "ecommerce": {
+      "title": "Full-Stack E-Commerce Web Application",
+      "bullets": [
+        "ASP.NET Core (.NET 10) with Razor MVC storefront, REST API (JWT auth), EF Core.",
+        "PostgreSQL, bilingual UI (en/et), admin dashboard, Docker / GitLab CI deployment.",
+        "Vue 3 + TypeScript SPA consuming a JWT-authenticated REST API, deployed via Docker behind Nginx."
+      ],
+      "mvcLink": "MVC storefront",
+      "spaLink": "Vue 3 SPA"
+    },
+    "coursework": {
+      "title": "Last semester coursework",
+      "bullets": [
+        "Latest deployed project from coursework at Tallinn University of Technology."
+      ],
+      "liveLink": "Live deployment"
+    }
+  },
+  "languages": {
+    "estonian": "Estonian – Native",
+    "english": "English – Fluent"
+  },
+  "contact": {
+    "intro": "Open to internships, entry-level, and mid-level software engineering roles.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "githubLabel": "GitHub",
+    "locationLabel": "Location",
+    "location": "Tallinn, Estonia"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Notes on what I'm building and learning.",
+    "readMore": "Read more",
+    "minRead": "min read",
+    "back": "← Back to blog",
+    "empty": "No posts yet."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "home": "Avaleht",
+    "blog": "Blogi",
+    "toggleTheme": "Vaheta teemat",
+    "language": "Keel"
+  },
+  "hero": {
+    "greeting": "Tere, mina olen",
+    "name": "Madis Voitk",
+    "tagline": "IT-süsteemide arenduse tudeng ja tulevane tarkvarainsener",
+    "intro": "Motiveeritud Tallinna Tehnikaülikooli teise kursuse tudeng. Ehitan fullstack-veebirakendusi ja naudin päriselu probleemide muutmist puhtaks ja hooldatavaks tarkvaraks.",
+    "ctaBlog": "Loe blogi",
+    "ctaContact": "Võta ühendust"
+  },
+  "sections": {
+    "profile": "Profiil",
+    "education": "Haridus",
+    "experience": "Kogemus",
+    "skills": "Oskused",
+    "projects": "Projektid",
+    "languages": "Keeled",
+    "contact": "Kontakt"
+  },
+  "profile": {
+    "body": "Motiveeritud Tallinna Tehnikaülikooli IT-süsteemide arenduse teise kursuse tudeng (eeldatav lõpetamine: 2027). Tugeva analüütilise mõtlemise, tehnilise uudishimu ja iseseisva õppimisvõimega. Tunnen suurt huvi tarkvaraarenduse, automatiseerimise ning tehnoloogia rakendamise vastu päriselu probleemide lahendamisel."
+  },
+  "education": {
+    "school": "Tallinna Tehnikaülikool",
+    "program": "IT-süsteemide arendus",
+    "period": "2024 – Eeldatav 2027",
+    "coursework": "Õppeained",
+    "courseworkList": "Oracle: programmeerimiskeeled SQL ja PL/SQL, JavaScript, Tarkvara testimise alused, Tarkvaratehnika, Veebirakendused C# baasil, Python edasijõudnutele, Andmebaasisüsteemide alused, Algoritmid ja andmestruktuurid, Veebitehnoloogiad, Programmeerimine C# keeles, Mikrokontrollerite programmeerimine Pythoni baasil, Tõenäosusteooria ja matemaatiline statistika, Java, Arvutivõrkude alused, Operatsioonisüsteemid ja nende haldamine, Kõrgem matemaatika, Arvutid."
+  },
+  "experience": {
+    "title": "Tarkvaraarenduse tudengiprojektid",
+    "subtitle": "Tallinna Tehnikaülikool",
+    "items": [
+      "Läbinud kursusetöid ja projekte kasutades tehnoloogiaid nagu C#, JS, TS, Vue, Angular, React, Java, Kotlin, PHP, Python ja SQL.",
+      "Harjutanud versioonihaldust Gitiga ning meeskonnatööd ühistes arendusprojektides.",
+      "Arendanud arusaama puhta koodi põhimõtetest, vigade silumisest ja objektorienteeritud disainist."
+    ]
+  },
+  "skills": {
+    "languagesLabel": "Programmeerimiskeeled",
+    "languagesList": "C#, JS, TS, Vue, Angular, React, Python, Java, Kotlin, PHP, SQL",
+    "toolsLabel": "Tööriistad ja tehnoloogiad",
+    "toolsList": "VS Code, IntelliJ IDEA, Docker, PyCharm, Rider, PHPStorm, Android Studio, Git, GitHub",
+    "strengthsLabel": "Põhioskused",
+    "strengthsList": "Loogiline mõtlemine, meeskonnatöö, suhtlemisoskus, kohanemisvõime"
+  },
+  "projects": {
+    "ecommerce": {
+      "title": "Täisstack e-kaubanduse veebirakendus",
+      "bullets": [
+        "ASP.NET Core (.NET 10) Razor MVC veebipood, REST API (JWT autentimine) ja EF Core.",
+        "PostgreSQL, kahekeelne kasutajaliides (en/et), adminpaneel ning Docker / GitLab CI juurutus.",
+        "Vue 3 + TypeScript SPA, mis kasutab JWT-autentimisega REST API-t ning on juurutatud Dockeri ja Nginxi abil."
+      ],
+      "mvcLink": "MVC veebipood",
+      "spaLink": "Vue 3 SPA"
+    },
+    "coursework": {
+      "title": "Eelmise semestri kursusetöö",
+      "bullets": [
+        "Viimati juurutatud projekt Tallinna Tehnikaülikooli kursusetööst."
+      ],
+      "liveLink": "Live juurutus"
+    }
+  },
+  "languages": {
+    "estonian": "Eesti keel – emakeel",
+    "english": "Inglise keel – väga hea"
+  },
+  "contact": {
+    "intro": "Avatud praktika-, algtaseme ja kesktaseme tarkvaraarendaja võimalustele.",
+    "emailLabel": "E-post",
+    "phoneLabel": "Telefon",
+    "githubLabel": "GitHub",
+    "locationLabel": "Asukoht",
+    "location": "Tallinn, Eesti"
+  },
+  "blog": {
+    "title": "Blogi",
+    "subtitle": "Mõtted sellest, mida ehitan ja õpin.",
+    "readMore": "Loe edasi",
+    "minRead": "min lugemist",
+    "back": "← Tagasi blogisse",
+    "empty": "Postitusi pole veel."
+  },
+  "footer": {
+    "rights": "Kõik õigused kaitstud."
+  }
+}

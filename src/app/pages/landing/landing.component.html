@@ -1,0 +1,170 @@
+<ng-container *transloco="let t">
+  <section class="hero">
+    <div class="hero__inner container">
+      <div class="hero__avatar" aria-hidden="true">MV</div>
+      <p class="hero__greeting">{{ t('hero.greeting') }}</p>
+      <h1 class="hero__name">{{ t('hero.name') }}</h1>
+      <p class="hero__tagline">{{ t('hero.tagline') }}</p>
+      <p class="hero__intro">{{ t('hero.intro') }}</p>
+      <div class="hero__cta">
+        <a routerLink="/blog" class="btn btn--primary">{{ t('hero.ctaBlog') }}</a>
+        <a href="#contact" class="btn">{{ t('hero.ctaContact') }}</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container content">
+    <section id="profile" class="section">
+      <h2 class="section__title">{{ t('sections.profile') }}</h2>
+      <p>{{ t('profile.body') }}</p>
+    </section>
+
+    <section id="education" class="section">
+      <h2 class="section__title">{{ t('sections.education') }}</h2>
+      <article class="card">
+        <div class="card__head">
+          <h3>{{ t('education.school') }}</h3>
+          <span class="card__meta">{{ t('education.period') }}</span>
+        </div>
+        <p class="card__sub">{{ t('education.program') }}</p>
+        <p>
+          <strong>{{ t('education.coursework') }}:</strong>
+          {{ t('education.courseworkList') }}
+        </p>
+      </article>
+    </section>
+
+    <section id="experience" class="section">
+      <h2 class="section__title">{{ t('sections.experience') }}</h2>
+      <article class="card">
+        <div class="card__head">
+          <h3>{{ t('experience.title') }}</h3>
+        </div>
+        <p class="card__sub">{{ t('experience.subtitle') }}</p>
+        <ul class="bullets">
+          @for (item of experienceItems(); track item) {
+            <li>{{ item }}</li>
+          }
+        </ul>
+      </article>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section__title">{{ t('sections.skills') }}</h2>
+      <dl class="skills">
+        <div class="skills__row">
+          <dt>{{ t('skills.languagesLabel') }}</dt>
+          <dd>{{ t('skills.languagesList') }}</dd>
+        </div>
+        <div class="skills__row">
+          <dt>{{ t('skills.toolsLabel') }}</dt>
+          <dd>{{ t('skills.toolsList') }}</dd>
+        </div>
+        <div class="skills__row">
+          <dt>{{ t('skills.strengthsLabel') }}</dt>
+          <dd>{{ t('skills.strengthsList') }}</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section__title">{{ t('sections.projects') }}</h2>
+
+      <article class="card">
+        <div class="card__head">
+          <h3>{{ t('projects.ecommerce.title') }}</h3>
+        </div>
+        <ul class="bullets">
+          @for (item of ecommerceBullets(); track item) {
+            <li>{{ item }}</li>
+          }
+        </ul>
+        <div class="card__links">
+          <a
+            href="https://mvoitk-cs3.proxy.itcollege.ee/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ t('projects.ecommerce.mvcLink') }} ↗</a
+          >
+          <a
+            href="https://mvoitk-ppfront.proxy.itcollege.ee/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ t('projects.ecommerce.spaLink') }} ↗</a
+          >
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3>{{ t('projects.coursework.title') }}</h3>
+        </div>
+        <ul class="bullets">
+          @for (item of courseworkBullets(); track item) {
+            <li>{{ item }}</li>
+          }
+        </ul>
+        <div class="card__links">
+          <a
+            href="https://mvoitk.proxy.itcollege.ee/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >{{ t('projects.coursework.liveLink') }} ↗</a
+          >
+        </div>
+      </article>
+
+    </section>
+
+    <section id="languages" class="section">
+      <h2 class="section__title">{{ t('sections.languages') }}</h2>
+      <ul class="bullets bullets--plain">
+        <li>{{ t('languages.estonian') }}</li>
+        <li>{{ t('languages.english') }}</li>
+      </ul>
+    </section>
+
+    @if (latestPosts.length > 0) {
+      <section id="latest-posts" class="section">
+        <h2 class="section__title">{{ t('blog.title') }}</h2>
+        <ul class="post-list">
+          @for (p of latestPosts; track p.slug) {
+            <li>
+              <a [routerLink]="['/blog', p.slug]" class="post-list__link">
+                <span class="post-list__title">{{ p.title[active()] }}</span>
+                <span class="post-list__meta">{{ p.date }}</span>
+              </a>
+            </li>
+          }
+        </ul>
+      </section>
+    }
+
+    <section id="contact" class="section">
+      <h2 class="section__title">{{ t('sections.contact') }}</h2>
+      <p>{{ t('contact.intro') }}</p>
+      <dl class="skills">
+        <div class="skills__row">
+          <dt>{{ t('contact.emailLabel') }}</dt>
+          <dd><a [href]="'mailto:' + contact.email">{{ contact.email }}</a></dd>
+        </div>
+        <div class="skills__row">
+          <dt>{{ t('contact.phoneLabel') }}</dt>
+          <dd><a [href]="contact.phoneHref">{{ contact.phone }}</a></dd>
+        </div>
+        <div class="skills__row">
+          <dt>{{ t('contact.githubLabel') }}</dt>
+          <dd>
+            <a [href]="contact.github" target="_blank" rel="noopener noreferrer">{{
+              contact.githubLabel
+            }}</a>
+          </dd>
+        </div>
+        <div class="skills__row">
+          <dt>{{ t('contact.locationLabel') }}</dt>
+          <dd>{{ t('contact.location') }}</dd>
+        </div>
+      </dl>
+    </section>
+  </div>
+</ng-container>
